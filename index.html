@@ -371,9 +371,7 @@
 
       
         
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/08/14/Hexo/#more" rel="contents">
@@ -520,17 +518,17 @@
       
         
           
+            <ol>
+<li><p>更改文件或文件夹权限</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">drwxr-xr-x@</span><br><span class="line">0123456789</span><br><span class="line"></span><br><span class="line">0:d 目录文件</span><br><span class="line">123:u(user) 文件或目录的所有者</span><br><span class="line">456:g(group) 与文件属主有相同组ID的所有用户</span><br><span class="line">789:o(others)</span><br><span class="line">@:macOS下的文件扩展属性</span><br><span class="line"></span><br><span class="line">r(read) = 4</span><br><span class="line">w(write) = 2</span><br><span class="line">x(Executable) = 1</span><br></pre></td></tr></table></figure>
+
+<p><strong>chmod 命令</strong> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">chmod [who] [+ | – | =] [mode] 文件名¼</span><br><span class="line"></span><br><span class="line">([who] [+ | – | =] [mode] -&gt; 4 + 2 + 1)</span><br><span class="line"></span><br><span class="line">who: u g o a(all)</span><br><span class="line"></span><br><span class="line">+ 添加某个权限。</span><br><span class="line">– 取消某个权限。</span><br><span class="line">= 赋予给定权限并取消其他所有权限（如果有的话）。</span><br><span class="line"></span><br><span class="line">mod:</span><br><span class="line">r 可读。</span><br><span class="line">w 可写。</span><br><span class="line">x 可执行。</span><br><span class="line">X 只有目标文件对某些用户是可执行的或该目标文件是目录时才追加x 属性。</span><br><span class="line">s 在文件执行时把进程的属主或组ID置为该文件的文件属主。方式“u＋s”设置文件的用户ID位，“g＋s”设置组ID位。</span><br><span class="line">t 保存程序的文本到交换设备上。</span><br><span class="line">u 与文件属主拥有一样的权限。</span><br><span class="line">g 与和文件属主同组的用户拥有一样的权限。</span><br><span class="line">o 与其他用户拥有一样的权限。</span><br><span class="line">-c : 若该档案权限确实已经更改，才显示其更改动作</span><br><span class="line">-f : 若该档案权限无法被更改也不要显示错误讯息</span><br><span class="line">-v : 显示权限变更的详细资料</span><br><span class="line">-R : 对目前目录下的所有档案与子目录进行相同的权限变更(即以递回的方式逐个变更)</span><br><span class="line">–help : 显示辅助说明</span><br><span class="line">–version : 显示版本</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+
           
-更改文件或文件夹权限
-123456789101112drwxr-xr-x@01234567890:d 目录文件123:u(user) 文件或目录的所有者456:g(group) 与文件属主有相同组ID的所有用户789:o(others)@:macOS下的文件扩展属性r(read) = 4w(wri
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/08/14/Linux/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
